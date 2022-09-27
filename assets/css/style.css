@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -12,15 +16,63 @@ header {
 
 }
 
-header h1{
+h1{
     font-size: 200%;
 }
 
-header nav {
+header img {
+    height: 100px;
+    width: 100px;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
 }
 
-header nav a {
+nav a {
     padding-left: 50px;
 }
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about {
+    width: 100%;
+    background-color: darkgreen;
+}
+
+aside {
+    border-right: solid;
+    flex: 1;
+    float: left;
+    padding-right: 50px;
+    max-width: 30%;
+}
+
+p {
+    float: right;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    max-width: 70%;
+    margin-right: 20px;
+}
+
+footer {
+    display: flex;
+    background-color: crimson;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    main, nav, section {
+      flex-direction: column;
+    }
+  }
