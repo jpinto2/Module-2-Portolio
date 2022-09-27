@@ -44,6 +44,20 @@ main {
     background-color: darkgreen;
 }
 
+#work {
+    background-color: gray;
+    width: 100%;
+}
+
+#work p {
+    float: left;
+    width: 70%;
+    
+}
+
+#work img {
+    float: left;
+}
 aside {
     border-right: solid;
     flex: 1;
